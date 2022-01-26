@@ -1,0 +1,1465 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Demo Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"Debug",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"Debug",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"Debug",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"DebugGame",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"DebugGame",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"DebugGame",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"Development",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"Development",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"Development",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"Shipping",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"Shipping",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"Shipping",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"Test",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"Test",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Mac",
+				"Test",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"Debug",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"Debug",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"Debug",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"DebugGame",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"DebugGame",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"DebugGame",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"Development",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"Development",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"Development",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"Shipping",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"Shipping",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"Shipping",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"Test",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"Test",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"IOS",
+				"Test",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"Debug",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Debug Cook+Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=Debug",
+				"-ServerConfig=Debug",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"DemoEditor Mac Development Build",
+				"Demo Android Debug Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Debug Cook",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=Debug",
+				"-ServerConfig=Debug",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook"
+			],
+			"dependsOn": [
+				"DemoEditor Mac Development Build",
+				"Demo Android Debug Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Debug Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=Debug",
+				"-ServerConfig=Debug",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-DeploySoToDevice",
+				"-SkipCook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"Demo Android Debug Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"Debug",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo Android Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"Debug",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"DebugGame",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android DebugGame Cook+Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=DebugGame",
+				"-ServerConfig=DebugGame",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"DemoEditor Mac Development Build",
+				"Demo Android DebugGame Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android DebugGame Cook",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=DebugGame",
+				"-ServerConfig=DebugGame",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook"
+			],
+			"dependsOn": [
+				"DemoEditor Mac Development Build",
+				"Demo Android DebugGame Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android DebugGame Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=DebugGame",
+				"-ServerConfig=DebugGame",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-DeploySoToDevice",
+				"-SkipCook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"Demo Android DebugGame Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"DebugGame",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo Android DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"DebugGame",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"Development",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Development Cook+Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=Development",
+				"-ServerConfig=Development",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"DemoEditor Mac Development Build",
+				"Demo Android Development Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Development Cook",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=Development",
+				"-ServerConfig=Development",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook"
+			],
+			"dependsOn": [
+				"DemoEditor Mac Development Build",
+				"Demo Android Development Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Development Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=Development",
+				"-ServerConfig=Development",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-DeploySoToDevice",
+				"-SkipCook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"Demo Android Development Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"Development",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo Android Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"Development",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"Shipping",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Shipping Cook+Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=Shipping",
+				"-ServerConfig=Shipping",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"DemoEditor Mac Development Build",
+				"Demo Android Shipping Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Shipping Cook",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=Shipping",
+				"-ServerConfig=Shipping",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook"
+			],
+			"dependsOn": [
+				"DemoEditor Mac Development Build",
+				"Demo Android Shipping Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Shipping Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=Shipping",
+				"-ServerConfig=Shipping",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-DeploySoToDevice",
+				"-SkipCook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"Demo Android Shipping Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"Shipping",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo Android Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"Shipping",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"Test",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Test Cook+Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=Test",
+				"-ServerConfig=Test",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"DemoEditor Mac Development Build",
+				"Demo Android Test Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Test Cook",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=Test",
+				"-ServerConfig=Test",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook"
+			],
+			"dependsOn": [
+				"DemoEditor Mac Development Build",
+				"Demo Android Test Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Test Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-Project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-noP4",
+				"-ClientConfig=Test",
+				"-ServerConfig=Test",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-DeploySoToDevice",
+				"-SkipCook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"Demo Android Test Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"Test",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Demo Android Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "Demo Android Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Demo",
+				"Android",
+				"Test",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "DemoEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"DemoEditor",
+				"Mac",
+				"Debug",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "DemoEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"DemoEditor",
+				"Mac",
+				"Debug",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"DemoEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "DemoEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"DemoEditor",
+				"Mac",
+				"Debug",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "DemoEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"DemoEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "DemoEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"DemoEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"DemoEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "DemoEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"DemoEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "DemoEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"DemoEditor",
+				"Mac",
+				"Development",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "DemoEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"DemoEditor",
+				"Mac",
+				"Development",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"DemoEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		},
+		{
+			"label": "DemoEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"DemoEditor",
+				"Mac",
+				"Development",
+				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/Epic Games/UE_4.27"
+			}
+		}
+	]
+}

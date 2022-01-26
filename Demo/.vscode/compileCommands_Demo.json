@@ -1,0 +1,532 @@
+[
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/android/libs/TapBootstrap_3.5.1.aar",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/ios/framework/LeanCloudObjc.embeddedframework.zip",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/ios/framework/TapBootstrapSDK.embeddedframework.zip",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/Private/TapBootstrap.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/Private/TapBootstrapBPLibrary.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/Private/TapBootstrapSettings.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/Public/TapAccessToken.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/Public/TapBootstrap.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/Public/TapBootstrapBPLibrary.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/Public/TapBootstrapSettings.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/Public/TapBridgeWrapper.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/Public/TapLanguage.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/Public/TapUser.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/Public/TapUserDetail.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/TapBootstrap.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrap/TapBootstrap_Android_UPL.xml",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrap.1.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrapEditor/Private/TapBootstrapEditor.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrapEditor.2.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrapEditor/Public/TapBootstrapEditor.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrapEditor.2.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapBootstrap/Source/TapBootstrapEditor/TapBootstrapEditor.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapBootstrapEditor.2.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/android/libs/TapCommon_3.5.1.aar",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/ios/framework/TapCommonSDK.embeddedframework.zip",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Private/android/AndroidBridge.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Private/android/AndroidBridge.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Private/ios/IOSBridge.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Private/ios/IOSBridge.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Private/TapBridge.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Private/TapCommon.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Private/TapCommonBPLibrary.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Private/TapJson.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Public/TapBridge.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Public/TapCommand.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Public/TapCommon.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Public/TapCommonBPLibrary.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Public/TapError.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Public/TapJson.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/Public/TapResult.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/TapCommon.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapCommon/Source/TapCommon/TapCommon_Android_UPL.xml",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapCommon.3.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapDB/Source/TapDB/android/libs/TapDB_3.5.1.aar",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapDB.4.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapDB/Source/TapDB/ios/framework/TapDB.embeddedframework.zip",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapDB.4.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapDB/Source/TapDB/Private/TapDB.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapDB.4.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapDB/Source/TapDB/Private/TapDBBPLibrary.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapDB.4.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapDB/Source/TapDB/Public/TapDB.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapDB.4.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapDB/Source/TapDB/Public/TapDBBPLibrary.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapDB.4.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapDB/Source/TapDB/Public/TapDBDynamicProperties.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapDB.4.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapDB/Source/TapDB/TapDB.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapDB.4.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapDB/Source/TapDB/TapDB_Android_UPL.xml",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapDB.4.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapLogin/Source/TapLogin/android/libs/TapLogin_3.5.1.aar",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapLogin.5.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapLogin/Source/TapLogin/ios/framework/TapLoginSDK.embeddedframework.zip",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapLogin.5.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapLogin/Source/TapLogin/Private/TapLogin.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapLogin.5.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapLogin/Source/TapLogin/Private/TapLoginBPLibrary.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapLogin.5.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapLogin/Source/TapLogin/Public/TapLogin.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapLogin.5.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapLogin/Source/TapLogin/Public/TapLoginBPLibrary.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapLogin.5.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapLogin/Source/TapLogin/TapLogin.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapLogin.5.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapLogin/Source/TapLogin/TapLogin_Android_UPL.xml",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapLogin.5.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapMoment/Source/TapMoment/Android/libs/TapMoment_3.5.1.aar",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapMoment.6.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapMoment/Source/TapMoment/ios/framework/TapMomentSDK.embeddedframework.zip",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapMoment.6.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapMoment/Source/TapMoment/Private/TapMoment.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapMoment.6.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapMoment/Source/TapMoment/Private/TapMomentBPLibrary.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapMoment.6.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapMoment/Source/TapMoment/Public/TapMoment.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapMoment.6.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapMoment/Source/TapMoment/Public/TapMomentBPLibrary.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapMoment.6.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapMoment/Source/TapMoment/TapMoment.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapMoment.6.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/TapMoment/Source/TapMoment/TapMoment_Android_UPL.xml",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/TapMoment.6.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDAccount/Source/XDAccount/Private/XDAccount.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDAccount.7.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDAccount/Source/XDAccount/Public/XDAccount.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDAccount.7.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDAccount/Source/XDAccount/XDAccount.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDAccount.7.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDAccount/Source/XDAccount/XDAccount_Android_UPL.xml",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDAccount.7.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDAnti/Source/XDAnti/Private/XDAnti.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDAnti.9.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDAnti/Source/XDAnti/Public/XDAnti.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDAnti.9.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDAnti/Source/XDAnti/XDAnti.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDAnti.9.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_apple_icon@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_apple_login_main@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_arrow@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_back@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_button@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_button_gray@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_change_account_btn@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_check@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_close@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_copy@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_facebook_icon@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_facebook_login_main@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_google_icon.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_google_login_main@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_guest_icon@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_guest_login_main@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_line_icon@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_line_login_main@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_loading_info@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_more_icon@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_taptap_icon@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_taptap_login_main@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_twitter_icon@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_twitter_login_main@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_uncheck@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/iOS/iOSConfigs/XDResources.bundle/tds_vector@3x.png",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/Private/XDCommon.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/Public/XDCommon.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/XDCommon.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/XDCommon_Android_UPL.xml",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Plugins/XDCommon/Source/XDCommon/XDCommon_iOS_UPL.xml",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/XDCommon.8.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Source/Demo/Demo.Build.cs",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/Demo.200.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Source/Demo/Demo.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/Demo.200.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Source/Demo/Demo.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/Demo.200.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Source/Demo/DemoGameModeBase.cpp",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/Demo.200.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	},
+	{
+		"file": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Source/Demo/DemoGameModeBase.h",
+		"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ @\"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo/Demo.200.rsp\"",
+		"directory": "/Users/Shared/Epic Games/UE_4.27/Engine/Source"
+	}
+]

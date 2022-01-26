@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- init section is always evaluated once per architecture -->
+    <init>
+        <log text="XDSDK Account Build init"/>
+    </init>
+
+    <!-- optional additions to proguard -->
+    <proguardAdditions>
+        <insert>
+            -keep class com.xd.XDAccountUnreal4{
+                *;
+            }
+        </insert>
+    </proguardAdditions>
+
+    <!-- optional files or directories to copy to Intermediate/Android/APK -->
+   <resourceCopies>
+        <copyDir src="$S(PluginDir)/../../Source/XDAccount/Android/libs/" dst="$S(BuildDir)/libs/" />
+        <copyDir src="$S(PluginDir)/../../Build/Android/src/" dst="$S(BuildDir)/src/com/xd/" />
+    </resourceCopies>
+
+    <buildGradleAdditions>
+        <insert>
+            dependencies { 
+                implementation(name: 'XDAccount_6.0.0',ext:'aar')
+            }
+        </insert>
+    </buildGradleAdditions>
+
+</root>
