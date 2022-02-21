@@ -6,9 +6,9 @@ isRelease=$2 #是否正式发布，测试发布时发布到suguiming的个人目
 
 git tag -d $(git tag)
   
-git branch -D main
+git branch -D release
   
-git subtree split --prefix=Plugins --branch main
+git subtree split --prefix=Plugins --branch release
   
 git remote rm $remoteRepo
 
@@ -22,10 +22,10 @@ fi;
 
 git tag $1
 
-git checkout main --force
+git checkout release --force
   
-git fetch --unshallow main
+git fetch --unshallow release
   
-git push $remoteRepo main --force --tags
+git push $remoteRepo release --force --tags
   
 git checkout $currentBranch --force
