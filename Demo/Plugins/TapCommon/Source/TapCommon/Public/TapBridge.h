@@ -6,7 +6,7 @@ class IBridge
 {
 
 public:
-    virtual void Init();
+    virtual void Init() = 0;
 
 public:
     virtual void Register(FString serviceClz, FString serviceImpl) = 0;
