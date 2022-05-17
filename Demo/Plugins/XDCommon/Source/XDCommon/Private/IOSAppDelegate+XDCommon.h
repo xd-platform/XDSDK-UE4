@@ -12,7 +12,7 @@
 /**
  * 
  */
-@interface IOSAppDelegate (XDGCommon)
+@interface IOSAppDelegate (XDCommon)
 
 @end
 

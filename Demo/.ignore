@@ -1,6 +1,5 @@
 Saved
 Content
-Script
 DerivedDataCache
 .vscode
 Intermediate
@@ -14,6 +13,8 @@ Plugins/TapLogin/Content
 Plugins/TapLogin/Intermediate
 Plugins/XDAnti/Content
 Plugins/XDAnti/Intermediate
+Plugins/XDPayment/Content
+Plugins/XDPayment/Intermediate
 Plugins/TapMoment/Content
 Plugins/TapMoment/Intermediate
 Plugins/TapCommon/Content

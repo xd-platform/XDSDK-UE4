@@ -100,6 +100,22 @@ void XDAccountAndroid::OpenUserCenter(){
     env->DeleteLocalRef(jXDSDKUnreal4Class);  
 }
 
+void XDAccountAndroid::AccountCancellation(){
+    JNIEnv *env = FAndroidApplication::GetJavaEnv();
+    auto jXDSDKUnreal4Class = FAndroidApplication::FindJavaClass(UNREAL4_CLASS_NAME_ACCOUNT);
+    if (jXDSDKUnreal4Class)
+    {
+        const char *strMethod = "accountCancellation";
+        auto jMethod = env->GetStaticMethodID(jXDSDKUnreal4Class, strMethod,
+                                              "()V");
+        if (jMethod)
+        {
+            env->CallStaticVoidMethod(jXDSDKUnreal4Class, jMethod);
+        }
+    }
+    env->DeleteLocalRef(jXDSDKUnreal4Class);  
+}
+
 
 
 #endif

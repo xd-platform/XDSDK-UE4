@@ -21,14 +21,18 @@ void XDAccountIOS::Login(){
     });
 }
 
-void XDAccountIOS::LoginByType(FString loginType){
+void XDAccountIOS::LoginByType(FString loginType){ //国内目前只有 Default , Guest, TapTap
      dispatch_async(dispatch_get_main_queue(), ^{
          LoginEntryType type = LoginEntryTypeDefault;
 
          NSString* str = loginType.GetNSString();
          if ([@"taptap" isEqualToString:[str lowercaseString]]){
             type = LoginEntryTypeTapTap;
+
+         }else  if ([@"guest" isEqualToString:[str lowercaseString]]){
+            type = LoginEntryTypeGuest;
          }
+         NSLog(@"单点登录类型: %@", str);
          
         [XDAccount loginWithPolicyByType:type];
     });
@@ -50,7 +54,7 @@ void XDAccountIOS::GetUser(){
           FXDCommonModule::OnXDSDKGetUserCompleted.Broadcast(1, UTF8_TO_TCHAR([userJson UTF8String]));
        }else{
           FXDCommonModule::OnXDSDKGetUserCompleted.Broadcast(0, "获取用户信息失败");
-          NSLog(@"获取用户信息是空");
+          NSLog(@"获取用户信息: 是空");
        }
     }];
 }
@@ -58,6 +62,14 @@ void XDAccountIOS::GetUser(){
 void XDAccountIOS::OpenUserCenter(){
       dispatch_async(dispatch_get_main_queue(), ^{
        [XDAccount openUserCenter];
+        NSLog(@"点击打开个人中心");
+    });
+}
+
+void XDAccountIOS::AccountCancellation(){
+      dispatch_async(dispatch_get_main_queue(), ^{
+       [XDAccount accountCancellation];
+        NSLog(@"点击打开账号注销");
     });
 }
 

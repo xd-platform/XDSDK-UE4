@@ -30,3 +30,7 @@ void UXDAccountBPLibrary::GetUser(){
 void UXDAccountBPLibrary::OpenUserCenter(){
  GetXDAccountBridge()->OpenUserCenter();
 }
+
+void UXDAccountBPLibrary::AccountCancellation(){
+ GetXDAccountBridge()->AccountCancellation();
+}

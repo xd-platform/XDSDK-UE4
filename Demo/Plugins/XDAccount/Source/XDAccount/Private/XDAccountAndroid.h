@@ -29,5 +29,6 @@ public:
 
 	 void OpenUserCenter();  
 
+	void AccountCancellation();  //打开账号注销页面
 };
 #endif

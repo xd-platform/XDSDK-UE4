@@ -5,7 +5,7 @@
 			"name": "Demo (Debug)",
 			"request": "launch",
 			"preLaunchTask": "Demo Mac Debug Build",
-			"program": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Binaries/Mac/UE4-Mac-Debug.app/Contents/MacOS/UE4-Mac-Debug",
+			"program": "/Users/guiming/Desktop/inner/xdsdk-ue4-6.0/Demo/Binaries/Mac/UE4-Mac-Debug.app/Contents/MacOS/UE4-Mac-Debug",
 			"args": [
 			],
 			"cwd": "/Users/Shared/Epic Games/UE_4.27",
@@ -15,7 +15,7 @@
 			"name": "Demo (DebugGame)",
 			"request": "launch",
 			"preLaunchTask": "Demo Mac DebugGame Build",
-			"program": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Binaries/Mac/UE4-Mac-DebugGame.app/Contents/MacOS/UE4-Mac-DebugGame",
+			"program": "/Users/guiming/Desktop/inner/xdsdk-ue4-6.0/Demo/Binaries/Mac/UE4-Mac-DebugGame.app/Contents/MacOS/UE4-Mac-DebugGame",
 			"args": [
 			],
 			"cwd": "/Users/Shared/Epic Games/UE_4.27",
@@ -25,7 +25,7 @@
 			"name": "Demo (Development)",
 			"request": "launch",
 			"preLaunchTask": "Demo Mac Development Build",
-			"program": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Binaries/Mac/UE4.app/Contents/MacOS/UE4",
+			"program": "/Users/guiming/Desktop/inner/xdsdk-ue4-6.0/Demo/Binaries/Mac/UE4.app/Contents/MacOS/UE4",
 			"args": [
 			],
 			"cwd": "/Users/Shared/Epic Games/UE_4.27",
@@ -35,7 +35,7 @@
 			"name": "Demo (Shipping)",
 			"request": "launch",
 			"preLaunchTask": "Demo Mac Shipping Build",
-			"program": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Binaries/Mac/UE4-Mac-Shipping.app/Contents/MacOS/UE4-Mac-Shipping",
+			"program": "/Users/guiming/Desktop/inner/xdsdk-ue4-6.0/Demo/Binaries/Mac/UE4-Mac-Shipping.app/Contents/MacOS/UE4-Mac-Shipping",
 			"args": [
 			],
 			"cwd": "/Users/Shared/Epic Games/UE_4.27",
@@ -45,7 +45,7 @@
 			"name": "Demo (Test)",
 			"request": "launch",
 			"preLaunchTask": "Demo Mac Test Build",
-			"program": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Binaries/Mac/UE4-Mac-Test.app/Contents/MacOS/UE4-Mac-Test",
+			"program": "/Users/guiming/Desktop/inner/xdsdk-ue4-6.0/Demo/Binaries/Mac/UE4-Mac-Test.app/Contents/MacOS/UE4-Mac-Test",
 			"args": [
 			],
 			"cwd": "/Users/Shared/Epic Games/UE_4.27",
@@ -57,7 +57,7 @@
 			"preLaunchTask": "DemoEditor Mac Debug Build",
 			"program": "/Users/Shared/Epic Games/UE_4.27/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
 			"args": [
-				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject"
+				"/Users/guiming/Desktop/inner/xdsdk-ue4-6.0/Demo/Demo.uproject"
 			],
 			"cwd": "/Users/Shared/Epic Games/UE_4.27",
 			"type": "lldb"
@@ -68,7 +68,7 @@
 			"preLaunchTask": "DemoEditor Mac DebugGame Build",
 			"program": "/Users/Shared/Epic Games/UE_4.27/Engine/Binaries/Mac/UE4Editor-Mac-DebugGame.app/Contents/MacOS/UE4Editor-Mac-DebugGame",
 			"args": [
-				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject"
+				"/Users/guiming/Desktop/inner/xdsdk-ue4-6.0/Demo/Demo.uproject"
 			],
 			"cwd": "/Users/Shared/Epic Games/UE_4.27",
 			"type": "lldb"
@@ -79,7 +79,7 @@
 			"preLaunchTask": "DemoEditor Mac Development Build",
 			"program": "/Users/Shared/Epic Games/UE_4.27/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
 			"args": [
-				"/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject"
+				"/Users/guiming/Desktop/inner/xdsdk-ue4-6.0/Demo/Demo.uproject"
 			],
 			"cwd": "/Users/Shared/Epic Games/UE_4.27",
 			"type": "lldb"
@@ -93,7 +93,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/Demo.uproject",
+				"-project=/Users/guiming/Desktop/inner/xdsdk-ue4-6.0/Demo/Demo.uproject",
 				"-game",
 				"-engine"
 			],

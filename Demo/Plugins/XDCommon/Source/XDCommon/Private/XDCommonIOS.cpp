@@ -112,4 +112,34 @@ int XDCommonIOS::GetAntiAddictionAgeRange(){
     return age;
 }
 
+void XDCommonIOS::TrackUser(FString userId){
+     NSLog(@"点击了 TrackUser %@", userId.GetNSString());
+     [XDGTrackerManager trackUser:userId.GetNSString()];
+}
+
+void XDCommonIOS::TrackRole(FString serverId, FString roleId, FString roleName, int32 level){
+     NSLog(@"点击了 TrackRole %@", roleI.GetNSString());
+    [XDGTrackerManager trackRoleWithRoleId:roleId.GetNSString() roleName:roleName.GetNSString() serverId:serverId.GetNSString() level:level];
+}
+	
+void XDCommonIOS::TrackEvent(FString eventName){
+     NSLog(@"点击了 TrackEvent %@", eventName.GetNSString());
+     [XDGTrackerManager trackEvent:eventName.GetNSString()];
+}
+
+void XDCommonIOS::TrackAchievement(){
+     NSLog(@"点击了 TrackAchievement");
+    [XDGTrackerManager trackAchievement];
+}
+
+void XDCommonIOS::EventCompletedTutorial(){
+     NSLog(@"点击了 EventCompletedTutorial");
+    [XDGTrackerManager eventCompletedTutorial];
+}
+
+void XDCommonIOS::EventCreateRole(){
+     NSLog(@"点击了 EventCreateRole");
+    [XDGTrackerManager eventCreateRole];
+} 
+
 #endif

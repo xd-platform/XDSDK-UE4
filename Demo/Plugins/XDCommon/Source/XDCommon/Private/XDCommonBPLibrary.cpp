@@ -43,3 +43,27 @@ int UXDCommonBPLibrary::GetAntiAddictionAgeRange(){
     GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red,  FString::FromInt(value)); //发布注销
     return value;
 }
+
+ void UXDCommonBPLibrary::TrackUser(FString userId){
+    GetXDCommonBridge()->TrackUser(userId);
+ }
+
+ void UXDCommonBPLibrary::TrackRole(FString serverId, FString roleId, FString roleName, int32 level){
+      GetXDCommonBridge()->TrackRole(serverId, roleId, roleName, level);
+ }
+	
+ void UXDCommonBPLibrary::TrackEvent(FString eventName){
+      GetXDCommonBridge()->TrackEvent(eventName);
+ }
+
+ void UXDCommonBPLibrary::TrackAchievement(){
+      GetXDCommonBridge()->TrackAchievement();
+ }
+
+ void UXDCommonBPLibrary::EventCompletedTutorial(){
+      GetXDCommonBridge()->EventCompletedTutorial();
+ }
+
+ void UXDCommonBPLibrary::EventCreateRole(){
+      GetXDCommonBridge()->EventCreateRole();
+ }

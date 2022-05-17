@@ -23,7 +23,7 @@
     <buildGradleAdditions>
         <insert>
             dependencies { 
-                implementation(name: 'XDAccount_6.0.0',ext:'aar')
+                implementation(name: 'XDAccount_6.2.4',ext:'aar')
             }
         </insert>
     </buildGradleAdditions>

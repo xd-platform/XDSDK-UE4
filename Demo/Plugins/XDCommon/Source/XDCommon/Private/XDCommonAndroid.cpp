@@ -154,6 +154,123 @@ int XDCommonAndroid::GetAntiAddictionAgeRange(){
     return num;
 }
 
+void XDCommonAndroid::TrackUser(FString userId){
+    JNIEnv *env = FAndroidApplication::GetJavaEnv();
+    auto jXDSDKUnreal4Class = FAndroidApplication::FindJavaClass(UNREAL4_CLASS_NAME_COMMON);
+    if (jXDSDKUnreal4Class)
+    {
+        const char *strMethod = "trackUser";
+        auto jMethod = env->GetStaticMethodID(jXDSDKUnreal4Class, strMethod,
+                                              "(Ljava/lang/String;)V");
+        if (jMethod)
+        {
+            auto jUserId = env->NewStringUTF(TCHAR_TO_ANSI(*userId));
+
+            env->CallStaticVoidMethod(jXDSDKUnreal4Class, jMethod, jUserId);
+            env->DeleteLocalRef(jUserId);
+        }
+    }
+    env->DeleteLocalRef(jXDSDKUnreal4Class);
+    
+}
+
+void XDCommonAndroid::TrackRole(FString serverId, FString roleId, FString roleName, int32 level){
+    JNIEnv *env = FAndroidApplication::GetJavaEnv();
+    auto jXDSDKUnreal4Class = FAndroidApplication::FindJavaClass(UNREAL4_CLASS_NAME_COMMON);
+    if (jXDSDKUnreal4Class)
+    {
+        const char *strMethod = "trackRole";
+        auto jMethod = env->GetStaticMethodID(jXDSDKUnreal4Class, strMethod,
+                                              "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V");
+        if (jMethod)
+        {
+            auto jServerId = env->NewStringUTF(TCHAR_TO_ANSI(*serverId));
+            auto jRoleId = env->NewStringUTF(TCHAR_TO_ANSI(*roleId));
+            auto jRoleName = env->NewStringUTF(TCHAR_TO_ANSI(*roleName));
+
+            env->CallStaticVoidMethod(jXDSDKUnreal4Class, jMethod,jServerId,jRoleId,jRoleName,level);
+
+            env->DeleteLocalRef(jServerId);
+            env->DeleteLocalRef(jUserId);
+            env->DeleteLocalRef(jRoleName);
+        }
+    }
+    env->DeleteLocalRef(jXDSDKUnreal4Class);   
+}
+	
+void XDCommonAndroid::TrackEvent(FString eventName){
+    JNIEnv *env = FAndroidApplication::GetJavaEnv();
+    auto jXDSDKUnreal4Class = FAndroidApplication::FindJavaClass(UNREAL4_CLASS_NAME_COMMON);
+    if (jXDSDKUnreal4Class)
+    {
+        const char *strMethod = "trackEvent";
+        auto jMethod = env->GetStaticMethodID(jXDSDKUnreal4Class, strMethod,
+                                              "(Ljava/lang/String;)V");
+        if (jMethod)
+        {
+            auto jEventName = env->NewStringUTF(TCHAR_TO_ANSI(*eventName));
+
+            env->CallStaticVoidMethod(jXDSDKUnreal4Class, jMethod, jEventName);
+
+             env->DeleteLocalRef(jEventName);
+        }
+    }
+    env->DeleteLocalRef(jXDSDKUnreal4Class);  
+}
+
+void XDCommonAndroid::TrackAchievement(){
+      JNIEnv *env = FAndroidApplication::GetJavaEnv();
+    auto jXDSDKUnreal4Class = FAndroidApplication::FindJavaClass(UNREAL4_CLASS_NAME_COMMON);
+    if (jXDSDKUnreal4Class)
+    {
+        const char *strMethod = "trackAchievement";
+        auto jMethod = env->GetStaticMethodID(jXDSDKUnreal4Class, strMethod,
+                                              "()V");
+        if (jMethod)
+        {
+            env->CallStaticVoidMethod(jXDSDKUnreal4Class, jMethod);
+        }
+    }
+    env->DeleteLocalRef(jXDSDKUnreal4Class);      
+}
+
+void XDCommonAndroid::EventCompletedTutorial(){
+     JNIEnv *env = FAndroidApplication::GetJavaEnv();
+    auto jXDSDKUnreal4Class = FAndroidApplication::FindJavaClass(UNREAL4_CLASS_NAME_COMMON);
+    if (jXDSDKUnreal4Class)
+    {
+        const char *strMethod = "eventCompletedTutorial";
+        auto jMethod = env->GetStaticMethodID(jXDSDKUnreal4Class, strMethod,
+                                              "()V");
+        if (jMethod)
+        {
+            env->CallStaticVoidMethod(jXDSDKUnreal4Class, jMethod);
+        }
+    }
+    env->DeleteLocalRef(jXDSDKUnreal4Class);   
+}
+
+void XDCommonAndroid::EventCreateRole(){
+     JNIEnv *env = FAndroidApplication::GetJavaEnv();
+    auto jXDSDKUnreal4Class = FAndroidApplication::FindJavaClass(UNREAL4_CLASS_NAME_COMMON);
+    if (jXDSDKUnreal4Class)
+    {
+        const char *strMethod = "eventCreateRole";
+        auto jMethod = env->GetStaticMethodID(jXDSDKUnreal4Class, strMethod,
+                                              "()V");
+        if (jMethod)
+        {
+            env->CallStaticVoidMethod(jXDSDKUnreal4Class, jMethod);
+        }
+    }
+    env->DeleteLocalRef(jXDSDKUnreal4Class);   
+} 
+
+
+
+
+
+
 #ifdef __cplusplus
 extern "C"
 {

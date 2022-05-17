@@ -37,5 +37,23 @@ class XDCOMMON_API UXDCommonBPLibrary : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintCallable, Category = "XDCommon")
 	static int GetAntiAddictionAgeRange();
+
+	UFUNCTION(BlueprintCallable, Category = "XDCommon")
+	static void TrackUser(FString userId); //登录成功后是要，tap db user统计
+
+	UFUNCTION(BlueprintCallable, Category = "XDCommon")
+	static void TrackRole(FString serverId, FString roleId, FString roleName, int32 level); //角色埋点
+	
+	UFUNCTION(BlueprintCallable, Category = "XDCommon")	
+	static void TrackEvent(FString eventName); //事件埋点
+
+	UFUNCTION(BlueprintCallable, Category = "XDCommon")
+	static void TrackAchievement(); //成就埋点
+
+	UFUNCTION(BlueprintCallable, Category = "XDCommon")
+	static void EventCompletedTutorial(); //完成新手指引埋点
+
+	UFUNCTION(BlueprintCallable, Category = "XDCommon")
+	static void EventCreateRole(); //创建角色埋点
 	
 };

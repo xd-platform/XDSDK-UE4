@@ -10,7 +10,7 @@ public class Demo : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" ,"TapCommon","TapBootstrap","TapLogin","TapDB","TapMoment","XDCommon","XDAccount","XDAnti"});
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" ,"TapCommon","TapBootstrap","TapLogin","TapDB","TapMoment","XDCommon","XDAccount","XDAnti", "XDPayment"});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 

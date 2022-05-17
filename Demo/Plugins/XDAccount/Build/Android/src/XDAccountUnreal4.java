@@ -22,7 +22,7 @@ public class XDAccountUnreal4 {
         new Handler(Looper.getMainLooper()).post(new Runnable() {
             @Override
             public void run() {
-                 print("点击登录");
+                 print("点击自带弹框登录");
                  XDAccount.loginWithPolicy();
             }
         });
@@ -34,7 +34,7 @@ public class XDAccountUnreal4 {
             @Override
             public void run() {
                 LoginEntryType type = getLoginType(loginType);
-                print("点击 LoginByType:  " + type.getName());
+                print("点击单点登录 LoginByType:  " + type.getName());
                 XDAccount.loginWithPolicyByType(type);
             }
         });
@@ -60,18 +60,25 @@ public class XDAccountUnreal4 {
     }
 
     public static void getUser() {
-        print("获取用户信息");
         XDAccount.getUser(new Callback<XDUser>() {
             @Override
             public void onCallback(XDUser user, XDError tdsServerError) {
                if (user != null){
                    String json = constructorUserForBridge(user, tdsServerError);
+                   print("获取用户信息: " + json);
+
                    XDCommonUnreal4.nativeOnXDSDKGetUserCompleted(1, json);
                }else{
                    XDCommonUnreal4.nativeOnXDSDKGetUserCompleted(0, "获取用户信息失败");
+                   print("获取用户信息失败， user 是 null");
                }
             }
         });
+    }
+
+    public static void accountCancellation() {
+        print("打开注销页面。");
+        XDAccount.accountCancellation();
     }
 
     private static String constructorUserForBridge(XDUser xdUser, XDError tdsServerError) {
@@ -107,11 +114,13 @@ public class XDAccountUnreal4 {
             tdsErrorParams.put("error_msg", tdsServerError.getMessage());
             callbackParams.put("error", tdsErrorParams);
         }
-        return BridgeJsonHelper.object2JsonString(callbackParams);
+        String resultJson = BridgeJsonHelper.object2JsonString(callbackParams);
+        print("打印用户信息: " + resultJson);
+        return resultJson;
     }
 
     private static void print(String msg){
-        Log.e("====== sdk log ====== \n", msg);
+        Log.i("====== sdk log XDAccount ====== \n", msg);
     }
 
 }

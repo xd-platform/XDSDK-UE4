@@ -38,6 +38,18 @@ public:
 	 void LeaveGame();
 
 	 int GetAntiAddictionAgeRange();
+
+	 void TrackUser(FString userId); //登录成功后是要，tap db user统计
+
+	 void TrackRole(FString serverId, FString roleId, FString roleName, int32 level); //角色埋点
+	
+	 void TrackEvent(FString eventName); //事件埋点
+
+	 void TrackAchievement(); //成就埋点
+
+	 void EventCompletedTutorial(); //完成新手指引埋点
+
+	 void EventCreateRole(); //创建角色埋点
 };
 
 #endif

@@ -229,13 +229,38 @@ public class XDCommonUnreal4 {
         return ageRange;
     }
 
-    public static void showLoading(Activity activity) {
-        TDSToastManager.instance().showLoading(activity);
+    public static void trackUser(String userId) {
+        print("trackUser: " + userId);
+        XDSDK.trackUser(userId);
     }
 
-    public static void hideLoading() {
-        TDSToastManager.instance().dismiss();
+    public static void trackRole(String serverId, String roleId, String roleName, int level) {
+        print("trackRole:" + serverId + " roleId:" + roleId + " roleName:" + roleName + " level:" + level);
+        XDSDK.trackRole(serverId, roleId, roleName, level);
     }
+
+    public static void trackEvent(String eventName) {
+        print("trackEvent:" + eventName);
+        XDSDK.trackEvent(eventName);
+    }
+
+    public static void trackAchievement() {
+        print("trackAchievement点击了");
+        XDSDK.trackAchievement();
+    }
+
+
+    public static void eventCompletedTutorial() {
+        print("eventCompletedTutorial打印");
+        XDSDK.eventCompletedTutorial();
+    }
+
+
+    public static void eventCreateRole() {
+        print("eventCreateRole打印");
+        XDSDK.eventCreateRole();
+    }
+
 
     // 下面是与SDK无关方法
     public static void onCreate(final Activity activity) {
@@ -262,7 +287,7 @@ public class XDCommonUnreal4 {
     }
 
     private static void print(String msg){
-        Log.e("====== sdk log ====== \n", msg);
+        Log.i("====== sdk log XDCommon ====== \n", msg);
     }
 
 

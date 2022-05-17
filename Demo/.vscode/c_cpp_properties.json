@@ -7,7 +7,7 @@
                 "/System/Library/Frameworks",
                 "/Library/Frameworks"
             ],
-            "compileCommands": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo.json",
+            "compileCommands": "/Users/guiming/Desktop/inner/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Demo.json",
             "cStandard": "c17",
             "cppStandard": "c++98"
         },
@@ -18,7 +18,7 @@
                 "/System/Library/Frameworks",
                 "/Library/Frameworks"
             ],
-            "compileCommands": "/Users/guiming/Desktop/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Default.json",
+            "compileCommands": "/Users/guiming/Desktop/inner/xdsdk-ue4-6.0/Demo/.vscode/compileCommands_Default.json",
             "cStandard": "c17",
             "cppStandard": "c++98"
         }
