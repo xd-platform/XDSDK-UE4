@@ -6,8 +6,9 @@
 #include "Modules/ModuleManager.h"
 #include "CoreUObject.h"
 #include "Engine.h"
+#include "CoreMinimal.h"
 
-class FXDPaymentModule : public IModuleInterface
+class XDPAYMENT_API FXDPaymentModule : public IModuleInterface
 {
 public:
 

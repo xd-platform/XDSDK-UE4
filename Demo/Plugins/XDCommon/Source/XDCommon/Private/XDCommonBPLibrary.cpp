@@ -67,3 +67,7 @@ int UXDCommonBPLibrary::GetAntiAddictionAgeRange(){
  void UXDCommonBPLibrary::EventCreateRole(){
       GetXDCommonBridge()->EventCreateRole();
  }
+
+ void UXDCommonBPLibrary::DevelopUrlInit(){
+      GetXDCommonBridge()->DevelopUrlInit();
+ }

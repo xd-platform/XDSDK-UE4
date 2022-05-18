@@ -45,6 +45,8 @@ public:
 	 void EventCompletedTutorial(); //完成新手指引埋点
 
 	 void EventCreateRole(); //创建角色埋点
+
+	 void DevelopUrlInit();
 };
 
 #endif

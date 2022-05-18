@@ -30,13 +30,13 @@ class XDCOMMON_API UXDCommonBPLibrary : public UBlueprintFunctionLibrary
 	static void InitSDK(FString clientID, int orientation);
 
 	UFUNCTION(BlueprintCallable, Category = "XDCommon")
-	static void EnterGame();
+	static void EnterGame();  //登录成功，进入前台 调用，开始轮询上报防沉迷时间
 
 	UFUNCTION(BlueprintCallable, Category = "XDCommon")
-	static void LeaveGame();
+	static void LeaveGame(); //退出登录，进入后台 调用，停止轮询上报防沉迷时间
 
 	UFUNCTION(BlueprintCallable, Category = "XDCommon")
-	static int GetAntiAddictionAgeRange();
+	static int GetAntiAddictionAgeRange(); //获取防沉迷的年龄段
 
 	UFUNCTION(BlueprintCallable, Category = "XDCommon")
 	static void TrackUser(FString userId); //登录成功后是要，tap db user统计
@@ -55,5 +55,9 @@ class XDCOMMON_API UXDCommonBPLibrary : public UBlueprintFunctionLibrary
 
 	UFUNCTION(BlueprintCallable, Category = "XDCommon")
 	static void EventCreateRole(); //创建角色埋点
+
+	UFUNCTION(BlueprintCallable, Category = "XDCommon")
+	static void DevelopUrlInit(); //设置测试环境url初始化，开发测试用，发布版里面实现会注销
+
 	
 };

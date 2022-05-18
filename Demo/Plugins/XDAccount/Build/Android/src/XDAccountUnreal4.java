@@ -120,7 +120,8 @@ public class XDAccountUnreal4 {
     }
 
     private static void print(String msg){
-        Log.i("====== sdk log XDAccount ====== \n", msg);
+        Log.i("a","a");
+        Log.i("==sdk log Account==\n", msg);
     }
 
 }

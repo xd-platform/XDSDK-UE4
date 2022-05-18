@@ -17,7 +17,7 @@
 /**
  * 
  */
-class XDPayment_API XDPaymentIOS : public XDPaymentBridge
+class XDPAYMENT_API XDPaymentIOS : public XDPaymentBridge
 {
 public:
 	 XDPaymentIOS();

@@ -37,6 +37,8 @@ public:
 
 	virtual void EventCreateRole() = 0; //创建角色埋点
 	
+	virtual void DevelopUrlInit() = 0; //设置测试环境url初始化,开发测试用，发布版里面实现会注销
+	
 };
 
 XDCommonBridge *GetXDCommonBridge();

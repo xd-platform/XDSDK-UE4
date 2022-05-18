@@ -34,7 +34,7 @@ public:
 
 	void OpenUserCenter();  
 
-    void AccountCancellation() = 0;  //打开账号注销页面
+    void AccountCancellation();  //打开账号注销页面
 
 };
 #endif

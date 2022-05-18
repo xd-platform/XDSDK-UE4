@@ -191,7 +191,7 @@ void XDCommonAndroid::TrackRole(FString serverId, FString roleId, FString roleNa
             env->CallStaticVoidMethod(jXDSDKUnreal4Class, jMethod,jServerId,jRoleId,jRoleName,level);
 
             env->DeleteLocalRef(jServerId);
-            env->DeleteLocalRef(jUserId);
+            env->DeleteLocalRef(jRoleId);
             env->DeleteLocalRef(jRoleName);
         }
     }
@@ -266,6 +266,22 @@ void XDCommonAndroid::EventCreateRole(){
     env->DeleteLocalRef(jXDSDKUnreal4Class);   
 } 
 
+void XDCommonAndroid::DevelopUrlInit(){
+    JNIEnv *env = FAndroidApplication::GetJavaEnv();
+    auto jXDSDKUnreal4Class = FAndroidApplication::FindJavaClass(UNREAL4_CLASS_NAME_COMMON);
+    if (jXDSDKUnreal4Class)
+    {
+        const char *strMethod = "developUrlInit";
+        auto jMethod = env->GetStaticMethodID(jXDSDKUnreal4Class, strMethod,
+                                              "(Landroid/app/Activity;)V");
+        if (jMethod)
+        {
+            auto jActivity = FAndroidApplication::GetGameActivityThis();
+            env->CallStaticVoidMethod(jXDSDKUnreal4Class, jMethod, jActivity);
+        }
+    }
+    env->DeleteLocalRef(jXDSDKUnreal4Class); 
+} 
 
 
 

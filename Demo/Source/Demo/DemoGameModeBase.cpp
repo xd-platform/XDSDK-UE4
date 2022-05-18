@@ -30,23 +30,23 @@ void ADemoGameModeBase::BeginPlay(){
     FXDCommonModule::OnXDSDKUnBindSuccess.AddUObject(this, &ADemoGameModeBase::OnXDSDKUnBindSuccess);
     
     // //Payment
-    // FXDPaymentModule::OnXDSDKPaymentSucceed.AddUObject(this, &ADemoGameModeBase::OnXDSDKPaymentSucceed);
+    FXDPaymentModule::OnXDSDKPaymentSucceed.AddUObject(this, &ADemoGameModeBase::OnXDSDKPaymentSucceed);
 
-    // FXDPaymentModule::OnXDSDKPaymentFailed.AddUObject(this, &ADemoGameModeBase::OnXDSDKPaymentFailed);
+    FXDPaymentModule::OnXDSDKPaymentFailed.AddUObject(this, &ADemoGameModeBase::OnXDSDKPaymentFailed);
 
-    // FXDPaymentModule::OnXDSDKQueryProductIdsSucceed.AddUObject(this, &ADemoGameModeBase::OnXDSDKQueryProductIdsSucceed);
+    FXDPaymentModule::OnXDSDKQueryProductIdsSucceed.AddUObject(this, &ADemoGameModeBase::OnXDSDKQueryProductIdsSucceed);
 
-    // FXDPaymentModule::OnXDSDKQueryProductIdsFailed.AddUObject(this, &ADemoGameModeBase::OnXDSDKQueryProductIdsFailed);
+    FXDPaymentModule::OnXDSDKQueryProductIdsFailed.AddUObject(this, &ADemoGameModeBase::OnXDSDKQueryProductIdsFailed);
 
-    // FXDPaymentModule::OnXDSDKQueryRestoredPurchasesSucceed.AddUObject(this, &ADemoGameModeBase::OnXDSDKQueryRestoredPurchasesSucceed);
+    FXDPaymentModule::OnXDSDKQueryRestoredPurchasesSucceed.AddUObject(this, &ADemoGameModeBase::OnXDSDKQueryRestoredPurchasesSucceed);
 
-    // FXDPaymentModule::OnXDSDKQueryRestoredPurchasesFailed.AddUObject(this, &ADemoGameModeBase::OnXDSDKQueryRestoredPurchasesFailed);
+    FXDPaymentModule::OnXDSDKQueryRestoredPurchasesFailed.AddUObject(this, &ADemoGameModeBase::OnXDSDKQueryRestoredPurchasesFailed);
 
-    // FXDPaymentModule::OnXDSDKCheckRefundStatusSucceed.AddUObject(this, &ADemoGameModeBase::OnXDSDKCheckRefundStatusSucceed);
+    FXDPaymentModule::OnXDSDKCheckRefundStatusSucceed.AddUObject(this, &ADemoGameModeBase::OnXDSDKCheckRefundStatusSucceed);
 
-    // FXDPaymentModule::OnXDSDKCheckRefundStatusFailed.AddUObject(this, &ADemoGameModeBase::OnXDSDKCheckRefundStatusFailed);
+    FXDPaymentModule::OnXDSDKCheckRefundStatusFailed.AddUObject(this, &ADemoGameModeBase::OnXDSDKCheckRefundStatusFailed);
 
-    // FXDPaymentModule::OnXDSDKPayWithWebCompleted.AddUObject(this, &ADemoGameModeBase::OnXDSDKPayWithWebCompleted);
+    FXDPaymentModule::OnXDSDKPayWithWebCompleted.AddUObject(this, &ADemoGameModeBase::OnXDSDKPayWithWebCompleted);
 
 
     UE_LOG(LogTemp, Log, TEXT("开始 DemoGameModeBase BeginPlay"));
@@ -55,7 +55,7 @@ void ADemoGameModeBase::BeginPlay(){
 
 //Common
 void ADemoGameModeBase::OnXDSDKInitCompleted(const bool success){
-    GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red,  FString::FromInt(success));
+    GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red,  "Init Result: " + FString::FromInt(success));
 }
 
 void ADemoGameModeBase::OnXDSDKLoginCompleted(const int32 code, const FString& result){
@@ -101,39 +101,39 @@ void ADemoGameModeBase::OnXDSDKUnBindSuccess(){
 }
 
 
-// //Payment
-// void ADemoGameModeBase::OnXDSDKPaymentSucceed(const FString& orderId, const FString& productId, const FString& serverId, const FString& roleId){
-//     GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Pay Success, orderId: " + orderId + "productId: " + productId);
-// }
+//Payment
+void ADemoGameModeBase::OnXDSDKPaymentSucceed(const FString& orderId, const FString& productId, const FString& serverId, const FString& roleId){
+    GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Pay Success, orderId: " + orderId + "productId: " + productId);
+}
 
-// void ADemoGameModeBase::OnXDSDKPaymentFailed(const int32 code, const FString& msg){
-//     GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Pay Fail, code: " + FString::FromInt(code) + " msg: " + msg);
-// }
+void ADemoGameModeBase::OnXDSDKPaymentFailed(const int32 code, const FString& msg){
+    GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Pay Fail, code: " + FString::FromInt(code) + " msg: " + msg);
+}
 
-// void ADemoGameModeBase::OnXDSDKQueryProductIdsSucceed(const FString& resultJson){
-//     GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Success: " + resultJson);
-// }
+void ADemoGameModeBase::OnXDSDKQueryProductIdsSucceed(const FString& resultJson){
+    GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Success: " + resultJson);
+}
 
-// void ADemoGameModeBase::OnXDSDKQueryProductIdsFailed(const int32 code, const FString& msg){
-//    GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Fail code: " + FString::FromInt(code) + " msg: " + msg);
-// }
+void ADemoGameModeBase::OnXDSDKQueryProductIdsFailed(const int32 code, const FString& msg){
+   GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Fail code: " + FString::FromInt(code) + " msg: " + msg);
+}
 
-// void ADemoGameModeBase::OnXDSDKQueryRestoredPurchasesSucceed(const FString& resultJson){
-//     GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Success: " + resultJson);
-// }
+void ADemoGameModeBase::OnXDSDKQueryRestoredPurchasesSucceed(const FString& resultJson){
+    GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Success: " + resultJson);
+}
 
-// void ADemoGameModeBase::OnXDSDKQueryRestoredPurchasesFailed(const int32 code, const FString& msg){
-//   GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Fail code: " + FString::FromInt(code) + " msg: " + msg);
-// }
+void ADemoGameModeBase::OnXDSDKQueryRestoredPurchasesFailed(const int32 code, const FString& msg){
+  GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Fail code: " + FString::FromInt(code) + " msg: " + msg);
+}
 
-// void ADemoGameModeBase::OnXDSDKCheckRefundStatusSucceed(const FString& resultJson){
-//       GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Success: " + resultJson);
-// }
+void ADemoGameModeBase::OnXDSDKCheckRefundStatusSucceed(const FString& resultJson){
+      GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Success: " + resultJson);
+}
 
-// void ADemoGameModeBase::OnXDSDKCheckRefundStatusFailed(const int32 code, const FString& msg){
-//    GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Fail code: " + FString::FromInt(code) + " msg: " + msg);
-// }
+void ADemoGameModeBase::OnXDSDKCheckRefundStatusFailed(const int32 code, const FString& msg){
+   GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Fail code: " + FString::FromInt(code) + " msg: " + msg);
+}
 
-// void ADemoGameModeBase::OnXDSDKPayWithWebCompleted(const int32 code, const FString& msg){
-//    GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Fail code: " + FString::FromInt(code) + " msg: " + msg);
-// }
+void ADemoGameModeBase::OnXDSDKPayWithWebCompleted(const int32 code, const FString& msg){
+   GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Red, "Fail code: " + FString::FromInt(code) + " msg: " + msg);
+}

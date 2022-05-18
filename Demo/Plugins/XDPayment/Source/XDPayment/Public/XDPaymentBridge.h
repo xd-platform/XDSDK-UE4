@@ -35,7 +35,7 @@ public:
                         FString roleId,
                         FString serverId,
                         FString ext) = 0; //安卓ping++网页支付(微信 支付宝)
-	
+
 };
 
 XDPaymentBridge *GetXDPaymentBridge();

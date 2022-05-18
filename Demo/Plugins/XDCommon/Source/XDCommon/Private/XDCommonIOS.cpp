@@ -44,12 +44,12 @@ void XDCommonIOS::InitSDK(FString clientID, int orientation){
         NSError *err = nil;
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData
                                                             options:NSJSONReadingMutableContainers
-                                                            error:&err];
+                                                              error:&err];
         if (err == nil){
             int type = [[NSString stringWithFormat:@"%@", [dic objectForKey:@"type"]] intValue];
             if (type == 0){
-                NSString *json = [NSString stringWithFormat:@"%@", [dic objectForKey:@"result"]];
-                FXDCommonModule::OnXDSDKLoginCompleted.Broadcast(1, UTF8_TO_TCHAR([json UTF8String])); //登录成功
+                NSString* jsonResult = [NSString stringWithFormat:@"%@", [dic objectForKey:@"result"]];
+                FXDCommonModule::OnXDSDKLoginCompleted.Broadcast(1, UTF8_TO_TCHAR([jsonResult UTF8String])); //登录成功
                 
             }else if(type == 1){
                 FXDCommonModule::OnXDSDKLoginCompleted.Broadcast(0, "登录失败");
@@ -118,7 +118,7 @@ void XDCommonIOS::TrackUser(FString userId){
 }
 
 void XDCommonIOS::TrackRole(FString serverId, FString roleId, FString roleName, int32 level){
-     NSLog(@"点击了 TrackRole %@", roleI.GetNSString());
+     NSLog(@"点击了 TrackRole %@", roleId.GetNSString());
     [XDGTrackerManager trackRoleWithRoleId:roleId.GetNSString() roleName:roleName.GetNSString() serverId:serverId.GetNSString() level:level];
 }
 	
@@ -141,5 +141,12 @@ void XDCommonIOS::EventCreateRole(){
      NSLog(@"点击了 EventCreateRole");
     [XDGTrackerManager eventCreateRole];
 } 
+
+
+//测试代码
+void XDCommonIOS::DevelopUrlInit(){
+   [XDCoreService setDevelopUrl]; 
+   XDCommonIOS::InitSDK("d4bjgwom9zk84wk", 0);
+}
 
 #endif

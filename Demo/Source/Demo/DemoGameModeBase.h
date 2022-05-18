@@ -36,23 +36,23 @@ class DEMO_API ADemoGameModeBase : public AGameModeBase
 
 	void OnXDSDKUnBindSuccess();
 
-	// //Payment 
-    // void OnXDSDKPaymentSucceed(const FString&, const FString&, const FString&, const FString&);
+	//Payment 
+    void OnXDSDKPaymentSucceed(const FString&, const FString&, const FString&, const FString&);
 
-    // void OnXDSDKPaymentFailed(const int32, const FString&);
+    void OnXDSDKPaymentFailed(const int32, const FString&);
 
-    // void OnXDSDKQueryProductIdsSucceed(const FString&);
+    void OnXDSDKQueryProductIdsSucceed(const FString&);
 
-    // void OnXDSDKQueryProductIdsFailed(const int32, const FString&);
+    void OnXDSDKQueryProductIdsFailed(const int32, const FString&);
 
-    // void OnXDSDKQueryRestoredPurchasesSucceed(const FString&);
+    void OnXDSDKQueryRestoredPurchasesSucceed(const FString&);
 
-    // void OnXDSDKQueryRestoredPurchasesFailed(const int32, const FString&);
+    void OnXDSDKQueryRestoredPurchasesFailed(const int32, const FString&);
 
-    // void OnXDSDKCheckRefundStatusSucceed(const FString&);
+    void OnXDSDKCheckRefundStatusSucceed(const FString&);
 
-    // void OnXDSDKCheckRefundStatusFailed(const int32, const FString&);
+    void OnXDSDKCheckRefundStatusFailed(const int32, const FString&);
 
-    // void OnXDSDKPayWithWebCompleted(const int32, const FString&);
+    void OnXDSDKPayWithWebCompleted(const int32, const FString&);
 
 };

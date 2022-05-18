@@ -22,6 +22,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import android.Manifest;
+import androidx.core.app.ActivityCompat;
+import com.xd.cn.common.utils.EnvHelper;
 
 public class XDCommonUnreal4 {
 
@@ -38,6 +41,12 @@ public class XDCommonUnreal4 {
                 .setOrientation(orientation)
                 .build();
         XDSDK.initSDK(activity, xdConfig);
+
+        //测试代码---start
+        print("请求权限");
+        String[] str = new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.READ_EXTERNAL_STORAGE};
+        ActivityCompat.requestPermissions(activity, str, 100); //请求读取权限
+        //测试代码---end
     }
 
     private static void setCallback() {
@@ -268,7 +277,7 @@ public class XDCommonUnreal4 {
         DisplayMetrics dm = new DisplayMetrics();
         display.getRealMetrics(dm);
 
-        if(activity.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
+        if (activity.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
             width = dm.widthPixels;
             height = dm.heightPixels;
         }
@@ -279,7 +288,7 @@ public class XDCommonUnreal4 {
     }
 
     public static void onResume(View ueContainerView, final Activity activity) {
-        if(width <= 0 || height <= 0 || width < height){
+        if (width <= 0 || height <= 0 || width < height) {
             return;
         }
         ueContainerView.getLayoutParams().width = width;
@@ -287,9 +296,15 @@ public class XDCommonUnreal4 {
     }
 
     private static void print(String msg){
-        Log.i("====== sdk log XDCommon ====== \n", msg);
+        Log.i("a","a");
+        Log.i("==sdk log Common==\n", msg);
     }
 
+     //测试代码
+     public static void developUrlInit(final Activity activity) {
+        EnvHelper.setApiEnv(EnvHelper.EnvEnum.Dev); //设置测试环境
+        initSDK(activity, "d4bjgwom9zk84wk", 0);
+    }
 
     //------JNI 回调-------
     public native static void nativeOnXDSDKInitCompleted(boolean success);

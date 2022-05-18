@@ -15,6 +15,7 @@
 #import <TDSGlobalSDKCommonKit/NSDictionary+TDSGlobalJson.h>
 #import <TDSGlobalSDKCommonKit/TDSGlobalPopWindowManager.h>
 #import <XDCommonSDK/XDGGameDataManager.h>
+#import <XDCommonSDK/XDCoreService.h>
 
 /**
  * 
@@ -50,6 +51,8 @@ public:
 	 void EventCompletedTutorial(); //完成新手指引埋点
 
 	 void EventCreateRole(); //创建角色埋点
+
+	 void DevelopUrlInit();
 };
 
 #endif

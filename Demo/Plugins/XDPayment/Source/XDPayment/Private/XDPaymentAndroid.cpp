@@ -57,7 +57,7 @@ void XDPaymentAndroid::PayWithWeb(FString orderId,
     {
         const char *strMethod = "pay";
         auto jMethod = env->GetStaticMethodID(jXDSDKUnreal4Class, strMethod,
-                                              "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;F;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
+                                              "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
         if (jMethod)
         {
             auto jOrderId = env->NewStringUTF(TCHAR_TO_ANSI(*orderId));
