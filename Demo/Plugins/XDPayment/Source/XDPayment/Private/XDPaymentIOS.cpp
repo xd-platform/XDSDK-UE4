@@ -60,6 +60,8 @@ void XDPaymentIOS::PayWithProduct(FString orderId,
     dispatch_async(dispatch_get_main_queue(), ^{
            NSString* oid = orderId.GetNSString();
            NSString* pid = productId.GetNSString();
+           NSString* rid = roleId.GetNSString();
+
 
            //测试代码---start
            oid = @"";
@@ -75,9 +77,12 @@ void XDPaymentIOS::PayWithProduct(FString orderId,
            }else {
                pid = @"com.xd.sdkdemo1.stone30";
            }
+            NSUserDefaults* df = [NSUserDefaults standardUserDefaults];
+            rid = [df objectForKey:@"demo_tmp_userId"];
+            NSLog(@"payment saved userId df get:%@", rid);
            //测试代码---end
 
-        [XDPayment payWithOrderId:oid productId:pid roleId:roleId.GetNSString() serverId:serverId.GetNSString() ext:ext.GetNSString() completionHandler:^(XDOrderInfo * _Nonnull orderInfo, NSError * _Nonnull error) {
+        [XDPayment payWithOrderId:oid productId:pid roleId:rid serverId:serverId.GetNSString() ext:ext.GetNSString() completionHandler:^(XDOrderInfo * _Nonnull orderInfo, NSError * _Nonnull error) {
             [XDUE4PaymentTool bridgePayCallback:orderInfo error:error];
         }];   
      });                            

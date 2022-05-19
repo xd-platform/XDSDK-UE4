@@ -50,6 +50,20 @@ void XDCommonIOS::InitSDK(FString clientID, int orientation){
             if (type == 0){
                 NSString* jsonResult = [NSString stringWithFormat:@"%@", [dic objectForKey:@"result"]];
                 FXDCommonModule::OnXDSDKLoginCompleted.Broadcast(1, UTF8_TO_TCHAR([jsonResult UTF8String])); //登录成功
+
+                //测试代码--start
+                NSData* resultData = [jsonResult dataUsingEncoding:NSUTF8StringEncoding];
+                NSDictionary* resultDic = [NSJSONSerialization JSONObjectWithData:resultData
+                                                                        options:NSJSONReadingMutableContainers
+                                                                        error:nil];
+                
+                NSDictionary* userDic = [resultDic objectForKey:@"user"];
+                NSString* uid = [userDic objectForKey:@"userId"];
+                NSUserDefaults* df = [NSUserDefaults standardUserDefaults];
+                [df setValue:uid forKey:@"demo_tmp_userId"];
+                [df synchronize];
+                NSLog(@"saved userId df get:%@", [df objectForKey:@"demo_tmp_userId"]);
+                //测试代码--end
                 
             }else if(type == 1){
                 FXDCommonModule::OnXDSDKLoginCompleted.Broadcast(0, "登录失败");
@@ -143,10 +157,11 @@ void XDCommonIOS::EventCreateRole(){
 } 
 
 
-//测试代码
 void XDCommonIOS::DevelopUrlInit(){
+   //测试代码--start 
    [XDCoreService setDevelopUrl]; 
    XDCommonIOS::InitSDK("d4bjgwom9zk84wk", 0);
+   //测试代码--end
 }
 
 #endif
