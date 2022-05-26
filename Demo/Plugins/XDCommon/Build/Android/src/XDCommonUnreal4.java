@@ -52,9 +52,7 @@ public class XDCommonUnreal4 {
         XDSDK.initSDK(activity, xdConfig);
 
         //测试代码---start
-        tmpActivity = activity;
-        String[] str = new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE};
-        ActivityCompat.requestPermissions(activity, str, 100); //请求读取权限
+        // tmpActivity = activity;
         //测试代码---end
     }
 
@@ -89,17 +87,17 @@ public class XDCommonUnreal4 {
                     processCallback(XDCallbackType.LoginSucceed, constructorUserForBridge(xdUser), "");
 
                     //测试代码--start
-                    if (tmpActivity != null) {
-                        SharedPreferences preferences = tmpActivity.getPreferences(0);
-                        SharedPreferences.Editor editor = preferences.edit();
-                        editor.putString("demo_tmp_sp_userId", xdUser.getId());
-                        editor.apply();
-                        print("saved userId: " + xdUser.getId());
-                    }
+                    // if (tmpActivity != null) {
+                    //     SharedPreferences preferences = tmpActivity.getPreferences(0);
+                    //     SharedPreferences.Editor editor = preferences.edit();
+                    //     editor.putString("demo_tmp_sp_userId", xdUser.getId());
+                    //     editor.apply();
+                    //     print("saved userId: " + xdUser.getId());
+                    // }
                     //测试代码--end
 
                 } else {
-                    processCallback(XDCallbackType.LoginFailed, null, "登录失败 用户信息是空");
+                    processCallback(XDCallbackType.LoginFailed, null, TEXT("登录失败 用户信息是空"));
                     Log.e("XDSDK LOG: ", "onLoginSuccess XDUser 是空");
                 }
             }
@@ -163,10 +161,10 @@ public class XDCommonUnreal4 {
             nativeOnXDSDKLoginCompleted(1, json); //登录成功
 
         } else if (type == XDCallbackType.LoginFailed) {
-            nativeOnXDSDKLoginCompleted(0, "登录失败");
+            nativeOnXDSDKLoginCompleted(0, TEXT("登录失败"));
 
         } else if (type == XDCallbackType.LoginCancel) {
-            nativeOnXDSDKLoginCompleted(-1, "登录取消");
+            nativeOnXDSDKLoginCompleted(-1, TEXT("登录取消"));
 
         } else if (type == XDCallbackType.LogoutSucceed) {
             nativeOnXDSDKLogoutSuccess();
@@ -195,9 +193,8 @@ public class XDCommonUnreal4 {
     }
 
     private static Map<String, Object> constructorUserForBridge(XDUser xdUser) {
-        Map<String, Object> callbackParams = new HashMap<>(2);
+        Map<String, Object> tdsUserParams = new HashMap<>(7);
         if (xdUser != null) {
-            Map<String, Object> tdsUserParams = new HashMap<>(7);
             tdsUserParams.put("userId", xdUser.getId());
             tdsUserParams.put("name", xdUser.getName());
             tdsUserParams.put("loginType", xdUser.getLoginTypeName());
@@ -216,12 +213,10 @@ public class XDCommonUnreal4 {
             tokenParams.put("tokenType", xdUser.getAccessToken().getTokenType());
             tokenParams.put("macKey", xdUser.getAccessToken().getMacKey());
             tokenParams.put("macAlgorithm", xdUser.getAccessToken().getMacAlgorithm());
-
             tdsUserParams.put("token", tokenParams);
-            callbackParams.put("user", tdsUserParams);
         }
 
-        return callbackParams;
+        return tdsUserParams;
     }
 
 
@@ -328,8 +323,8 @@ public class XDCommonUnreal4 {
 
     public static void developUrlInit(final Activity activity) {
         //测试代码--start
-        EnvHelper.setApiEnv(EnvHelper.EnvEnum.Dev); //设置测试环境
-        initSDK(activity, "d4bjgwom9zk84wk", 0);
+        // EnvHelper.setApiEnv(EnvHelper.EnvEnum.Dev); //设置测试环境
+        // initSDK(activity, "d4bjgwom9zk84wk", 0);
         //测试代码--end
     }
 

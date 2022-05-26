@@ -17,39 +17,39 @@ public class XDPaymentUnreal4 {
                            String ext) {
 
         //测试代码---start
-        orderId = "";
-        payAmount = 1.0f;
-        if (productId.equals("1")) {
-            productId = "com.xd.sdkdemo1.stone60";
-            payAmount = 30.0f;
-        } else if (productId.equals("2")) {
-            productId = "com.xd.sdkdemo1.stone300";
-            payAmount = 30.0f;
-        } else if (productId.equals("3")) {
-            productId = "com.xd.sdkdemo1.stone500";
-            payAmount = 50.0f;
-        } else if (productId.equals("4")) {
-            productId = "com.xd.sdkdemo1.stone980";
-            payAmount = 108.0f;
-        } else if (productId.equals("5")) {
-            productId = "com.xd.sdkdemo1.stone1080";
-            payAmount = 400.0f;
-        } else if (productId.equals("6")) {
-            productId = "com.xd.sdkdemo1.stone5400";
-            payAmount = 500.0f;
-        } else if (productId.equals("7")) {
-            productId = "com.xd.sdkdemo1.package";
-            payAmount = 999.0f;
-        } else {
-            productId = "com.xd.sdkdemo1.stone30";
-            payAmount = 1.0f;
-        }
-        productName = productId;
-        if (XDCommonUnreal4.tmpActivity != null) {
-            SharedPreferences preferences = XDCommonUnreal4.tmpActivity.getPreferences(0);
-            roleId = preferences.getString("demo_tmp_sp_userId", "");
-            print("payment saved userId: " + roleId);
-        }
+        // orderId = "";
+        // payAmount = 1.0f;
+        // if (productId.equals("1")) {
+        //     productId = "com.xd.sdkdemo1.stone60";
+        //     payAmount = 30.0f;
+        // } else if (productId.equals("2")) {
+        //     productId = "com.xd.sdkdemo1.stone300";
+        //     payAmount = 30.0f;
+        // } else if (productId.equals("3")) {
+        //     productId = "com.xd.sdkdemo1.stone500";
+        //     payAmount = 50.0f;
+        // } else if (productId.equals("4")) {
+        //     productId = "com.xd.sdkdemo1.stone980";
+        //     payAmount = 108.0f;
+        // } else if (productId.equals("5")) {
+        //     productId = "com.xd.sdkdemo1.stone1080";
+        //     payAmount = 400.0f;
+        // } else if (productId.equals("6")) {
+        //     productId = "com.xd.sdkdemo1.stone5400";
+        //     payAmount = 500.0f;
+        // } else if (productId.equals("7")) {
+        //     productId = "com.xd.sdkdemo1.package";
+        //     payAmount = 999.0f;
+        // } else {
+        //     productId = "com.xd.sdkdemo1.stone30";
+        //     payAmount = 1.0f;
+        // }
+        // productName = productId;
+        // if (XDCommonUnreal4.tmpActivity != null) {
+        //     SharedPreferences preferences = XDCommonUnreal4.tmpActivity.getPreferences(0);
+        //     roleId = preferences.getString("demo_tmp_sp_userId", "");
+        //     print("payment saved userId: " + roleId);
+        // }
         //测试代码---end
 
         print("打开网页支付: " + "productId: " + productId + " roleId: " + roleId + "serverId: " + serverId);

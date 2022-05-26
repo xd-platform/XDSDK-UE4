@@ -5,6 +5,9 @@
 #include "XDCommonBridge.h"
 #include "Engine.h"
 
+#include "CoreMinimal.h"
+#include "GameFramework/GameModeBase.h"
+
 
 UXDCommonBPLibrary::UXDCommonBPLibrary(const FObjectInitializer &ObjectInitializer) : Super(ObjectInitializer)
 {
@@ -71,3 +74,10 @@ int UXDCommonBPLibrary::GetAntiAddictionAgeRange(){
  void UXDCommonBPLibrary::DevelopUrlInit(){
       GetXDCommonBridge()->DevelopUrlInit();
  }
+
+
+ void UXDCommonBPLibrary::ShowTest(){
+    //测试代码
+    //GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green,  TEXT("InitSucceed3 中文 ศูนย์ความปลอดภัยบัญชี"), true, FVector2D(2, 2));
+    //GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, "OnSDKInitSucceed 中文 ศูนย์ความปลอดภัยบัญชี");
+}

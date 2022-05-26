@@ -2,7 +2,7 @@
 
 #include "CoreMinimal.h"
 
-class IBridge
+class TAPCOMMON_API IBridge
 {
 
 public:

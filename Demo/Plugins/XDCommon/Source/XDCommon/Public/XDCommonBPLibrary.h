@@ -59,5 +59,7 @@ class XDCOMMON_API UXDCommonBPLibrary : public UBlueprintFunctionLibrary
 	UFUNCTION(BlueprintCallable, Category = "XDCommon")
 	static void DevelopUrlInit(); //设置测试环境url初始化，开发测试用，发布版里面实现会注销
 
+	UFUNCTION(BlueprintCallable, Category = "XDCommon")
+	static void ShowTest();  //测试代码
 	
 };

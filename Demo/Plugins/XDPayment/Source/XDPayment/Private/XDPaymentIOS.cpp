@@ -64,22 +64,22 @@ void XDPaymentIOS::PayWithProduct(FString orderId,
 
 
            //测试代码---start
-           oid = @"";
-           if ([@"1" isEqualToString:pid]){
-               pid = @"com.xd.sdkdemo1.stone300";
+        //    oid = @"";
+        //    if ([@"1" isEqualToString:pid]){
+        //        pid = @"com.xd.sdkdemo1.stone300";
 
-           }else  if ([@"2" isEqualToString:pid]){
-               pid = @"com.xd.sdkdemo1.stone500";
+        //    }else  if ([@"2" isEqualToString:pid]){
+        //        pid = @"com.xd.sdkdemo1.stone500";
 
-           }else  if ([@"3" isEqualToString:pid]){
-               pid = @"com.xd.sdkdemo1.stone980";
+        //    }else  if ([@"3" isEqualToString:pid]){
+        //        pid = @"com.xd.sdkdemo1.stone980";
 
-           }else {
-               pid = @"com.xd.sdkdemo1.stone30";
-           }
-            NSUserDefaults* df = [NSUserDefaults standardUserDefaults];
-            rid = [df objectForKey:@"demo_tmp_userId"];
-            NSLog(@"payment saved userId df get:%@", rid);
+        //    }else {
+        //        pid = @"com.xd.sdkdemo1.stone30";
+        //    }
+        //     NSUserDefaults* df = [NSUserDefaults standardUserDefaults];
+        //     rid = [df objectForKey:@"demo_tmp_userId"];
+        //     NSLog(@"payment saved userId df get:%@", rid);
            //测试代码---end
 
         [XDPayment payWithOrderId:oid productId:pid roleId:rid serverId:serverId.GetNSString() ext:ext.GetNSString() completionHandler:^(XDOrderInfo * _Nonnull orderInfo, NSError * _Nonnull error) {
@@ -109,7 +109,7 @@ void XDPaymentIOS::QueryRestoredPurchases(){
             NSLog(@"QueryRestoredPurchases success %@", strJson);
 
         }else{
-            FXDPaymentModule::OnXDSDKQueryRestoredPurchasesFailed.Broadcast(-1, "查询失败");
+            FXDPaymentModule::OnXDSDKQueryRestoredPurchasesFailed.Broadcast(-1, TEXT("查询失败"));
             NSLog(@"QueryRestoredPurchases fail");
         }
     }];
@@ -182,7 +182,7 @@ void XDPaymentIOS::PayWithWeb(FString orderId,
         FXDPaymentModule::OnXDSDKPaymentSucceed.Broadcast(UTF8_TO_TCHAR([orderId UTF8String]), UTF8_TO_TCHAR([productId UTF8String]), UTF8_TO_TCHAR([serverId UTF8String]), UTF8_TO_TCHAR([roleId UTF8String]));
         NSLog(@"success orderId: %@, productId: %@", orderId, productId);
     }else{
-        FXDPaymentModule::OnXDSDKPaymentFailed.Broadcast(-1, "失败");
+        FXDPaymentModule::OnXDSDKPaymentFailed.Broadcast(-1, TEXT("失败"));
          NSLog(@"fail 2");
     }
 }

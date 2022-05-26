@@ -69,7 +69,7 @@ public class XDAccountUnreal4 {
 
                    XDCommonUnreal4.nativeOnXDSDKGetUserCompleted(1, json);
                }else{
-                   XDCommonUnreal4.nativeOnXDSDKGetUserCompleted(0, "获取用户信息失败");
+                   XDCommonUnreal4.nativeOnXDSDKGetUserCompleted(0, TEXT("获取用户信息失败"));
                    print("获取用户信息失败， user 是 null");
                }
             }
@@ -105,18 +105,20 @@ public class XDAccountUnreal4 {
             tokenParams.put("macKey", xdUser.getAccessToken().getMacKey());
             tokenParams.put("macAlgorithm", xdUser.getAccessToken().getMacAlgorithm());
             tdsUserParams.put("token", tokenParams);
-            callbackParams.put("user", tdsUserParams);
-        }
 
-        if (tdsServerError != null) {
+            String resultJson = BridgeJsonHelper.object2JsonString(tdsUserParams);
+            print("打印用户信息: " + resultJson);
+            return resultJson;
+            
+        }else{
             Map<String, Object> tdsErrorParams = new HashMap<>(2);
             tdsErrorParams.put("code", tdsServerError.getCode());
             tdsErrorParams.put("error_msg", tdsServerError.getMessage());
-            callbackParams.put("error", tdsErrorParams);
-        }
-        String resultJson = BridgeJsonHelper.object2JsonString(callbackParams);
-        print("打印用户信息: " + resultJson);
-        return resultJson;
+            String resultJson = BridgeJsonHelper.object2JsonString(tdsErrorParams);
+
+            print("用户信息获取失败: " + resultJson);
+            return resultJson;
+        }       
     }
 
     private static void print(String msg){

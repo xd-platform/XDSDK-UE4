@@ -51,9 +51,14 @@ void XDAccountIOS::GetUser(){
        NSLog(@"获取用户信息: %@", userJson);
 
        if(result != nil){
-          FXDCommonModule::OnXDSDKGetUserCompleted.Broadcast(1, UTF8_TO_TCHAR([userJson UTF8String]));
+            NSData* resultData = [userJson dataUsingEncoding:NSUTF8StringEncoding];
+            NSDictionary* resultDic = [NSJSONSerialization JSONObjectWithData:resultData
+                                                                    options:NSJSONReadingMutableContainers
+                                                                    error:nil];
+            NSDictionary* userDic = [resultDic objectForKey:@"user"];
+            FXDCommonModule::OnXDSDKGetUserCompleted.Broadcast(1, UTF8_TO_TCHAR([userDic.tdsglobal_jsonString UTF8String])); 
        }else{
-          FXDCommonModule::OnXDSDKGetUserCompleted.Broadcast(0, "获取用户信息失败");
+          FXDCommonModule::OnXDSDKGetUserCompleted.Broadcast(0, TEXT("获取用户信息失败"));
           NSLog(@"获取用户信息: 是空");
        }
     }];
